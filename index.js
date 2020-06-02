@@ -42,7 +42,8 @@ finalnumber+=1;
 products.push(results[0].product); //result是一個陣列 result[0]是物件(object)大陸翻譯對象 然後java腳本的陣列可以放字串
 id.push(results[0].id); //id也是一個陣列 id.push()意思是把東西放進這個陣列裡面
 price.push(results[0].price);
-res.json(results); //顯示result result是陣列裡面放物件
+selectproduct=`<body style="font-size:20px;">id=${results[0].id} identified=${results[0].identified} price=${results[0].price}</body>`;
+res.send(selectproduct); //顯示result result是陣列裡面放物件
 
 
 }
